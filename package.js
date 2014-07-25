@@ -3,10 +3,11 @@ Package.describe({
 });
 
 Package.on_use(function(api) {
-	api.add_files([
-		// Core Library
-		"lib/three.js",
+	api.add_files(["lib/three.js"], "client");
 
+	api.export("THREE", "client");
+
+	api.add_files([
 		// Loaders
 		"lib/loaders/OBJMTLLoader.js",
 		"lib/loaders/MTLLoader.js",
@@ -75,6 +76,4 @@ Package.on_use(function(api) {
 		"lib/shaders/VerticalTiltShiftShader.js",
 		"lib/shaders/VignetteShader.js"
 	], "client");
-
-	api.export("THREE", "client");
 });
