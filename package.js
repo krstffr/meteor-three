@@ -3,19 +3,24 @@ Package.describe({
 });
 
 Package.on_use(function(api) {
-	api.add_files(["lib/three.js"], "client");
-
-	api.export("THREE");
+	api.export("THREE", "client");
 
 	api.add_files([
+		// Core
+		"lib/three.js",
+
 		// Loaders
 		"extras/loaders/OBJMTLLoader.js",
 		"extras/loaders/MTLLoader.js",
 		"extras/loaders/OBJLoader.js",
-		"extras/loaders/ctm/ctm.js",
 		"extras/loaders/ctm/CTMLoader.js",
-		"extras/loaders/ctm/CTMWorker.js",
-		"extras/loaders/ctm/lzma.js",
+
+		// There doesn't appear to be a good way to package worker scripts in Meteor ATM,
+		// so you can either move these files into public yourself or just use the
+		// single threaded CTM Loader:
+		// "extras/loaders/ctm/CTMWorker.js",
+		// "extras/loaders/ctm/ctm.js",
+		// "extras/loaders/ctm/lzma.js",
 
 		// Exporters
 		"extras/exporters/STLBinaryExporter.js",
