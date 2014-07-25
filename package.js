@@ -5,7 +5,7 @@ Package.describe({
 Package.on_use(function(api) {
 	api.add_files(["lib/three.js"], "client");
 
-	api.export("THREE", "client");
+	api.export("THREE");
 
 	api.add_files([
 		// Loaders
