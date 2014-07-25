@@ -3,12 +3,10 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.add_files("lib/three.js", "client");
-    api.add_files('lib/OBJMTLLoader.js', 'client');
-    api.add_files('lib/MTLLoader.js', 'client');
-    api.add_files('lib/OBJLoader.js', 'client');
-    api.add_files('lib/controls/TrackballControls.js', 'client');
-    api.add_files('lib/controls/OrbitControls.js', 'client');
-    api.add_files('lib/controls/FlyControls.js', 'client');
+    api.add_files(["lib/three.js"], "client");
+    api.add_files(['lib/loaders/OBJMTLLoader.js', 'lib/loaders/MTLLoader.js', 'lib/loaders/OBJLoader.js',
+    	'lib/loaders/ctm/ctm.js', 'lib/loaders/ctm/CTMLoader.js', 'lib/loaders/ctm/CTMWorker.js', 'lib/loaders/ctm/lzma.js'], 'client');
+    api.add_files(["lib/exporters/STLBinaryExporter.js"], "client");
+    api.add_files(['lib/controls/TrackballControls.js', 'lib/controls/OrbitControls.js', 'lib/controls/FlyControls.js'], 'client');
     api.export('THREE', 'client');
 });
