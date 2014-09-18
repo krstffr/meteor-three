@@ -13,6 +13,7 @@ Package.on_use(function(api) {
 		"extras/loaders/OBJMTLLoader.js",
 		"extras/loaders/MTLLoader.js",
 		"extras/loaders/OBJLoader.js",
+		"extras/loaders/DDSLoader.js",
 		"extras/loaders/ctm/CTMLoader.js",
 
 		// There doesn't appear to be a good way to package worker scripts in Meteor ATM,
