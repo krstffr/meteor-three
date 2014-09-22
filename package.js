@@ -1,8 +1,12 @@
 Package.describe({
-	summary: "Three.js - A JavaScript 3D library"
+	summary: "Three.js - A JavaScript 3D library. This package includes the core Three.js library as well as several extensions from the examples folder.",
+	version: "0.68.0",
+	name: "limemakers:three",
+	git: "https://github.com/limemakers/meteor-three.git",
 });
 
 Package.on_use(function(api) {
+	api.versionsFrom('0.9.0');
 	api.export("THREE", "client");
 
 	api.add_files([
@@ -29,7 +33,7 @@ Package.on_use(function(api) {
 		// Controls
 		"extras/controls/TrackballControls.js",
 		"extras/controls/OrbitControls.js",
-		"extras/controls/FlyControls.js",
+		// "extras/controls/FlyControls.js",
 
 		// PostProcessing
 		"extras/postprocessing/BloomPass.js",

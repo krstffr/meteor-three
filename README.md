@@ -2,8 +2,7 @@
 
 [Three.js](http://threejs.org)
 [Meteor](http://meteor.com)
-[Atmosphere](https://atmospherejs.com/)
+<!-- [Atmosphere](https://atmospherejs.com/) -->
 
 ## How to install 
-1. `npm install -g meteorite` (if not already installed)
-2. `mrt add three`
+`meteor add limemakers:three`

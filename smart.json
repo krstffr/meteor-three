@@ -1,9 +1,9 @@
 {
   "name": "three",
   "description": "JavaScript 3D library",
-  "homepage": "https://github.com/farpoint/meteor-three",
+  "homepage": "https://github.com/limemakers/meteor-three",
   "author": "three.js authors (https://github.com/mrdoob/three.js/graphs/contributors)",
-  "version": "0.67.1",
-  "git": "https://github.com/farpoint/meteor-three.git",
+  "version": "0.68.0",
+  "git": "https://github.com/limemakers/meteor-three.git",
   "packages": {}
 }
