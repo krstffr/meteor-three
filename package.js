@@ -1,5 +1,5 @@
 Package.describe({
-	summary: "Three.js - A JavaScript 3D library. This package includes the core Three.js library as well as several extensions from the examples folder.",
+	summary: "Three.js core library + several useful extensions from the examples folder.",
 	version: "0.68.0",
 	name: "limemakers:three",
 	git: "https://github.com/limemakers/meteor-three.git",
