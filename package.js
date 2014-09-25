@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "Three.js core library + several useful extensions from the examples folder.",
-	version: "0.68.1",
+	version: "0.68.2",
 	name: "limemakers:three",
 	git: "https://github.com/limemakers/meteor-three.git",
 });
@@ -29,6 +29,9 @@ Package.on_use(function(api) {
 
 		// Exporters
 		"extras/exporters/STLBinaryExporter.js",
+		"extras/exporters/STLExporter.js",
+		"extras/exporters/OBJExporter.js",
+		"extras/exporters/MaterialExporter.js",
 
 		// Controls
 		"extras/controls/TrackballControls.js",
