@@ -5,13 +5,11 @@ Package.describe({
 	git: "https://github.com/krstffr/meteor-three.git",
 });
 
-Npm.depends({ typedarray: "0.0.6" });
-
 Package.on_use(function(api) {
 
+	api.add_files(["lib/typedarray.js"], "client");
 	api.add_files(["lib/three.js"], "client");
 
 	api.export("THREE", "client");
-	api.export("Float32Array", "client");
 
 });
