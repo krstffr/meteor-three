@@ -1,5 +1,5 @@
 Package.describe({
-	summary: "Three.js core library + IE8 Polyfill.",
+	summary: "Three.js core library + IE9 Polyfill.",
 	version: "0.68.3",
 	name: "krstffr:three",
 	git: "https://github.com/krstffr/meteor-three.git",
